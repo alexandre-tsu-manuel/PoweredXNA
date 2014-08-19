@@ -1,0 +1,9 @@
+c:\users\alexandre\documents\visual studio 2013\Projects\PoweredXNA\MySuperGame\MySuperGame\bin\x86\Debug\MySuperGame.exe
+c:\users\alexandre\documents\visual studio 2013\Projects\PoweredXNA\MySuperGame\MySuperGame\bin\x86\Debug\MySuperGame.pdb
+c:\users\alexandre\documents\visual studio 2013\Projects\PoweredXNA\MySuperGame\MySuperGame\bin\x86\Debug\PoweredXNA.dll
+c:\users\alexandre\documents\visual studio 2013\Projects\PoweredXNA\MySuperGame\MySuperGame\bin\x86\Debug\PoweredXNA.pdb
+c:\users\alexandre\documents\visual studio 2013\Projects\PoweredXNA\MySuperGame\MySuperGame\obj\x86\Debug\MySuperGame.csprojResolveAssemblyReference.cache
+c:\users\alexandre\documents\visual studio 2013\Projects\PoweredXNA\MySuperGame\MySuperGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\alexandre\documents\visual studio 2013\Projects\PoweredXNA\MySuperGame\MySuperGame\obj\x86\Debug\MySuperGame.exe
+c:\users\alexandre\documents\visual studio 2013\Projects\PoweredXNA\MySuperGame\MySuperGame\obj\x86\Debug\MySuperGame.pdb
+C:\Users\Alexandre\documents\visual studio 2013\Projects\PoweredXNA\MySuperGame\MySuperGame\bin\x86\Debug\Content\images\loul.xnb

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoweredXNA", "PoweredXNA\PoweredXNA.csproj", "{CDB54DF4-1A77-48E3-8D25-329FFBDBCFC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySuperGame", "MySuperGame\MySuperGame\MySuperGame.csproj", "{FFAD28D8-08DA-43C7-8DE6-DDE815CB35F5}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "MySuperGameContent", "MySuperGame\MySuperGameContent\MySuperGameContent.contentproj", "{7662477E-C64E-4340-A97D-4C16F435705F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDB54DF4-1A77-48E3-8D25-329FFBDBCFC1}.Debug|x86.ActiveCfg = Debug|x86
+		{CDB54DF4-1A77-48E3-8D25-329FFBDBCFC1}.Debug|x86.Build.0 = Debug|x86
+		{CDB54DF4-1A77-48E3-8D25-329FFBDBCFC1}.Release|x86.ActiveCfg = Release|x86
+		{CDB54DF4-1A77-48E3-8D25-329FFBDBCFC1}.Release|x86.Build.0 = Release|x86
+		{FFAD28D8-08DA-43C7-8DE6-DDE815CB35F5}.Debug|x86.ActiveCfg = Debug|x86
+		{FFAD28D8-08DA-43C7-8DE6-DDE815CB35F5}.Debug|x86.Build.0 = Debug|x86
+		{FFAD28D8-08DA-43C7-8DE6-DDE815CB35F5}.Release|x86.ActiveCfg = Release|x86
+		{FFAD28D8-08DA-43C7-8DE6-DDE815CB35F5}.Release|x86.Build.0 = Release|x86
+		{7662477E-C64E-4340-A97D-4C16F435705F}.Debug|x86.ActiveCfg = Debug|x86
+		{7662477E-C64E-4340-A97D-4C16F435705F}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
