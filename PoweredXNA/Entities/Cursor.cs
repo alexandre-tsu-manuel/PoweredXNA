@@ -13,11 +13,11 @@ namespace PoweredXNA.Entities
             _defaultCursorEnabled = true;
         }
 
-        public static void SetCursor(string keyNormal, string keyPushed, Pos delta) { SetCursor("", keyNormal, keyPushed, delta); }
-        public static void SetCursor(string folder, string keyNormal, string keyPushed, Pos delta)
+        public static void SetCursor(string keyNormal, string keyPushed, Pos delta = null) { SetCursor("", keyNormal, keyPushed, delta); }
+        public static void SetCursor(string folder, string keyNormal, string keyPushed, Pos delta = null)
         {
             _cursor.LoadContent(PathBuilder.Build(folder, keyNormal), "", PathBuilder.Build(folder, keyPushed));
-            _cursor.Delta = delta;
+            _cursor.Delta = delta != null ? delta : new Pos();
             _defaultCursorEnabled = false;
         }
 

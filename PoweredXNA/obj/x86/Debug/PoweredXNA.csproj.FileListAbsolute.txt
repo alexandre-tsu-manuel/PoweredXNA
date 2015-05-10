@@ -4,3 +4,9 @@ c:\users\alexandre\documents\visual studio 2013\Projects\PoweredXNA\PoweredXNA\o
 c:\users\alexandre\documents\visual studio 2013\Projects\PoweredXNA\PoweredXNA\obj\x86\Debug\PoweredXNA.dll
 c:\users\alexandre\documents\visual studio 2013\Projects\PoweredXNA\PoweredXNA\obj\x86\Debug\PoweredXNA.pdb
 C:\Users\Alexandre\documents\visual studio 2013\Projects\PoweredXNA\PoweredXNA\obj\x86\Debug\PoweredXNA.csprojResolveAssemblyReference.cache
+C:\Users\Alexandre\Documents\GitHub\PoweredXNA\PoweredXNA\bin\x86\Debug\PoweredXNA.dll
+C:\Users\Alexandre\Documents\GitHub\PoweredXNA\PoweredXNA\bin\x86\Debug\PoweredXNA.pdb
+C:\Users\Alexandre\Documents\GitHub\PoweredXNA\PoweredXNA\obj\x86\Debug\PoweredXNA.csprojResolveAssemblyReference.cache
+C:\Users\Alexandre\Documents\GitHub\PoweredXNA\PoweredXNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Alexandre\Documents\GitHub\PoweredXNA\PoweredXNA\obj\x86\Debug\PoweredXNA.dll
+C:\Users\Alexandre\Documents\GitHub\PoweredXNA\PoweredXNA\obj\x86\Debug\PoweredXNA.pdb

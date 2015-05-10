@@ -12,11 +12,11 @@ namespace MySuperGame
         static void Main(string[] args)
         {
             OptionsPreset preset = new OptionsPreset();
-            preset.ScreenResolution = new Resolution(800, 600);
+            preset.ScreenResolution = new Resolution(1920, 1080);
             preset.Fullscreen = false;
             preset.LoadAllResourcesAtStart = true;
             preset.WindowTitle = "PoweredXNA Project";
-            preset.AllowScreenResizing = false;
+            preset.AllowScreenResizing = true;
 
             Library.Start(new Game(), preset);
         }

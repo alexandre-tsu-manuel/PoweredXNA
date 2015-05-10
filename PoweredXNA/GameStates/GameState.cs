@@ -48,8 +48,10 @@ namespace PoweredXNA
             if (States.Count == 0)
                 return;
             GameState current = States.Peek();
-            while (current.State == State.Exit)
+            while (States.Count > 0 && current.State == State.Exit)
                 States.Pop();
+            if (States.Count == 0)
+                return;
             if (current.State == State.Reload)
             {
                 current.Initialize(gameTime);

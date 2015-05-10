@@ -52,7 +52,17 @@ namespace PoweredXNA.Entities
         /// <summary>
         /// Position de l'entity
         /// </summary>
-        public Pos Pos;
+        public Pos Pos
+        {
+            get { return _pos; }
+            set
+            {
+                _pos = value;
+                Rect.X = (int)_pos.X;
+                Rect.Y = (int)_pos.Y;
+            }
+        }
+        private Pos _pos;
 
         /// <summary>
         /// Delta de position à l'affichage
@@ -75,7 +85,7 @@ namespace PoweredXNA.Entities
         }
 
         /// <summary>
-        /// Vitesse de déplacement de l'entity
+        /// Vitesse de déplacement de l'entity en pixels par seconde
         /// </summary>
         public float Speed
         {
@@ -84,9 +94,31 @@ namespace PoweredXNA.Entities
         }
 
         /// <summary>
+        /// Vitesse de rotation par seconde de l'entity
+        /// </summary>
+        public float RotationSpeed;
+
+        /// <summary>
         /// Rotation de l'entity au moment du Draw
         /// </summary>
-        public float Rotation;
+        public float Rotation
+        {
+            get { return _rotation; }
+            set
+            {
+                _rotation = value;
+                while (_rotation > MathHelper.Pi)
+                    _rotation -= MathHelper.Pi * 2;
+                while (_rotation < MathHelper.Pi)
+                    _rotation += MathHelper.Pi * 2;
+                double OA = System.Math.Sqrt(Rect.Width * Rect.Width + Rect.Height * Rect.Height) / 2;
+                double alpha0 = System.Math.Atan((double)Rect.Height / Rect.Width);
+                double alpha = _rotation - alpha0;
+                //_rotationDelta.X = (float)((-System.Math.Cos(alpha) + 1) * OA - OA + Rect.Width / 2);
+                //_rotationDelta.Y = (float)(System.Math.Sin(alpha) * OA + OA);
+            }
+        }
+        private float _rotation;
         
         private Pos _rotationDelta;
 
@@ -184,7 +216,7 @@ namespace PoweredXNA.Entities
             Movement = movement;
             Visible = visible;
             Delta = new Pos();
-            Rotation = 0;
+            _rotation = 0;
             Scale = 1;
             Opacity = 1;
             GameState.AddEntityOnTop(this);
@@ -239,12 +271,13 @@ namespace PoweredXNA.Entities
             KeyTextureOver = keyOver;
             KeyTexturePushed = keyPushed;
             Texture2D buff = Resources.Image(KeyTextureNormal);
-            Rect = new Rectangle(0, 0, buff.Width, buff.Height);
+            Rect = Pos.ToRectangle(buff.Width, buff.Height);
             if (center != Center.None)
-            {
-                Pos = new Pos(center == Center.All ? Pos.X - Rect.Width / 2 : Pos.X,
-                              center == Center.All ? Pos.Y - Rect.Height / 2 : Pos.Y);
-            }
+                Pos = new Pos
+                    (
+                        center == Center.All ? Pos.X - Rect.Width / 2 : Pos.X,
+                        center == Center.All ? Pos.Y - Rect.Height / 2 : Pos.Y
+                    );
         }
 
         /// <summary>
@@ -253,9 +286,10 @@ namespace PoweredXNA.Entities
         /// <param name="gameTime">Le GameTime associé à la frame</param>
         public void Update(GameTime gameTime)
         {
-            Pos += Movement * (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-            Rect.X = (int)Pos.X;
-            Rect.Y = (int)Pos.Y;
+            if (Movement != Vector2.Zero)
+                Pos += Movement * (float)gameTime.ElapsedGameTime.TotalMilliseconds / 1000;
+            if (RotationSpeed != 0)
+                Rotation += RotationSpeed * (float)gameTime.ElapsedGameTime.TotalMilliseconds / 1000;
             _mouseIsOver = this.CalculateMouse();
         }
 
@@ -271,6 +305,9 @@ namespace PoweredXNA.Entities
         {
             if (Visible)
             {
+                // Taking 1 pixel
+                // Color[] pixelColours = new Color[1];
+                // MyTexture.GetData<Color>(pixelColours, ?, 1); // Voir doc pour le ?
                 //if (Rotation == 0)
                     return PositionIsOver(Events.GetMousePos());
                 /*else
@@ -317,11 +354,11 @@ namespace PoweredXNA.Entities
             if (this.Visible)
                 if (MouseIsOver)
                     if (Events.LeftIsDown())
-                        Tile.Draw(KeyTexturePushed, Pos + Delta + _rotationDelta, Rotation, Scale, Opacity, Flip);
+                        Tile.Draw(KeyTexturePushed, Rect + Delta + _rotationDelta, Rotation, Scale, Opacity, Flip);
                     else
-                        Tile.Draw(KeyTextureOver, Pos + Delta + _rotationDelta, Rotation, Scale, Opacity, Flip);
+                        Tile.Draw(KeyTextureOver, Rect + Delta + _rotationDelta, Rotation, Scale, Opacity, Flip);
                 else
-                    Tile.Draw(KeyTextureNormal, Pos + Delta + _rotationDelta, Rotation, Scale, Opacity, Flip);
+                    Tile.Draw(KeyTextureNormal, Rect + Delta + _rotationDelta, Rotation, Scale, Opacity, Flip);
         }
     }
 }

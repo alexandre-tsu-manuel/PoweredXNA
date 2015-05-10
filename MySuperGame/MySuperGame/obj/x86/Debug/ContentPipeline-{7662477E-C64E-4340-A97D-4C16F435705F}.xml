@@ -2,13 +2,76 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>images\loul.png</Source>
-      <Name>images\loul</Name>
+      <Source>images\bg.jpg</Source>
+      <Name>images\bg</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Alexandre\documents\visual studio 2013\Projects\PoweredXNA\MySuperGame\MySuperGame\bin\x86\Debug\Content\images\loul.xnb</Output>
-      <Time>2014-08-18T23:38:00.671636+02:00</Time>
+      <Output>C:\Users\Alexandre\Documents\GitHub\PoweredXNA\MySuperGame\MySuperGame\bin\x86\Debug\Content\images\bg.xnb</Output>
+      <Time>2014-11-25T22:59:03.3341849+01:00</Time>
+    </Item>
+    <Item>
+      <Source>images\void.png</Source>
+      <Name>images\void</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alexandre\Documents\GitHub\PoweredXNA\MySuperGame\MySuperGame\bin\x86\Debug\Content\images\void.xnb</Output>
+      <Time>2014-11-25T23:34:11.8431258+01:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bg2.jpg</Source>
+      <Name>images\bg2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alexandre\Documents\GitHub\PoweredXNA\MySuperGame\MySuperGame\bin\x86\Debug\Content\images\bg2.xnb</Output>
+      <Time>2014-11-25T23:38:51.6550363+01:00</Time>
+    </Item>
+    <Item>
+      <Source>spritefonts\menu.spritefont</Source>
+      <Name>spritefonts\menu</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alexandre\Documents\GitHub\PoweredXNA\MySuperGame\MySuperGame\bin\x86\Debug\Content\spritefonts\menu.xnb</Output>
+      <Time>2014-11-26T00:12:30.9624158+01:00</Time>
+    </Item>
+    <Item>
+      <Source>images\cursors\1.png</Source>
+      <Name>images\cursors\1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alexandre\Documents\GitHub\PoweredXNA\MySuperGame\MySuperGame\bin\x86\Debug\Content\images\cursors\1.xnb</Output>
+      <Time>2014-11-26T00:45:14.8805639+01:00</Time>
+    </Item>
+    <Item>
+      <Source>images\cursors\2.png</Source>
+      <Name>images\cursors\2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alexandre\Documents\GitHub\PoweredXNA\MySuperGame\MySuperGame\bin\x86\Debug\Content\images\cursors\2.xnb</Output>
+      <Time>2014-11-26T00:45:15.3116969+01:00</Time>
+    </Item>
+    <Item>
+      <Source>images\hours.png</Source>
+      <Name>images\hours</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alexandre\Documents\GitHub\PoweredXNA\MySuperGame\MySuperGame\bin\x86\Debug\Content\images\hours.xnb</Output>
+      <Time>2015-05-03T04:27:55.2362545+02:00</Time>
+    </Item>
+    <Item>
+      <Source>images\minutes.png</Source>
+      <Name>images\minutes</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alexandre\Documents\GitHub\PoweredXNA\MySuperGame\MySuperGame\bin\x86\Debug\Content\images\minutes.xnb</Output>
+      <Time>2015-05-03T04:27:55.2312552+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -17,10 +80,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Alexandre\documents\visual studio 2013\Projects\PoweredXNA\MySuperGame\MySuperGameContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Alexandre\documents\visual studio 2013\Projects\PoweredXNA\MySuperGame\MySuperGame\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Alexandre\documents\visual studio 2013\Projects\PoweredXNA\MySuperGame\MySuperGame\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Alexandre\documents\visual studio 2013\Projects\PoweredXNA\MySuperGame\MySuperGame\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Alexandre\Documents\GitHub\PoweredXNA\MySuperGame\MySuperGameContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Alexandre\Documents\GitHub\PoweredXNA\MySuperGame\MySuperGame\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Alexandre\Documents\GitHub\PoweredXNA\MySuperGame\MySuperGame\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Alexandre\Documents\GitHub\PoweredXNA\MySuperGame\MySuperGame\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

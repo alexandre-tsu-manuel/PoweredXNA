@@ -14,10 +14,35 @@ namespace PoweredXNA.Display
         /// <param name="pos">Position à laquelle dessiner la tile</param>
         /// <param name="rotation">Rotation à appliquer à la Tile en radians</param>
         /// <param name="scale">Zoom à effectuer sur la Tile. 1 Par défaut.</param>
-        public static void Draw(string path, Pos pos, float rotation = 0, float scale = 1, float opacity = 1, SpriteEffects flip = SpriteEffects.None)
+        public static void Draw(string path, Rectangle pos, float rotation = 0, float scale = 1, float opacity = 1, SpriteEffects flip = SpriteEffects.None)
         {
-            if (path != "" && path != null)
-                Globals.SpriteBatch.Draw(Resources.Image(path), pos.ToVector2(), null, Color.White * opacity, rotation, new Vector2(), scale, flip, 0);
+            if (path != null && path != "")
+                if (rotation == 0)
+                    Globals.SpriteBatch.Draw
+                        (
+                            Resources.Image(path),
+                            new Vector2(pos.X, pos.Y),
+                            null,
+                            Color.White * opacity,
+                            0,
+                            Vector2.Zero,
+                            scale,
+                            flip,
+                            0
+                        );
+                else
+                    Globals.SpriteBatch.Draw
+                        (
+                            Resources.Image(path),
+                            new Vector2(pos.Center.X, pos.Center.Y),
+                            null,
+                            Color.White * opacity,
+                            -rotation,
+                            new Vector2(pos.Width / 2, pos.Height / 2),
+                            scale,
+                            flip,
+                            0
+                        );
         }
     }
 }
