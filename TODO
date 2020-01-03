@@ -1,0 +1,26 @@
+    * Finish a version one
+        - Mouse Capturing fix
+        - Musics decibel system fix
+        - Implement sounds
+        - Add some geometry generations (creating cubes, rouds & stuff)
+    * Create some little games with it
+        - Sokoban
+        - RPG
+        - Coffee machine (lolilol)
+        - Some game I don't think about right now
+    * Improve the library to a v2
+        - Animations (see Gwenn advices)
+        - Music spatialising
+        - Improve geometry functions
+        - Create custom hitboxes
+    * Create a static website about the library
+        - Create the basic website
+        - make some cool stuff with CSS3
+    * Write a tutorial on ZdS
+    * Present the library to the 2019
+    * Start to recruit some people?
+    * Improve even more the library (v3?)
+        - Light system (GLSL shaders?)
+        - Implement an XML reader to create controls
+        - Code a physics engine (see box2D)
+        - Lang switch system
